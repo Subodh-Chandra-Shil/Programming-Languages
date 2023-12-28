@@ -144,8 +144,6 @@ test();
 ```
 </details>
 
-&nbsp;
-
 ### **Challenge**
 ```jsx
 {
@@ -160,3 +158,70 @@ test();
 </details>
 
 
+## ```Q7: JavaScript Scope```
+
+<details>
+<summary>Answer</summary>
+
+**The answer is taken from: https://dev.to/mingt/javascript-introduction-to-scope-function-scope-block-scope-d11**
+
+
+Scope determines the visibility and accessibility of variables, functions or any other resource within different parts of your source code. 3 types of scopes available in JS: 
+1. Block scope
+2. Function scope
+3. Global scope 
+
+### Global scope
+
+Avoid declaring global variables as much possible, since it can be shared within the source code or any other file associated with it.
+
+</details>
+
+## ```Q8: What is lexical scoping?```
+
+<details>
+<summary>Answer</summary>
+
+> A lexical or static scope in JavaScript means that a variable, function or any other resource defined inside a nested function can resources of outer functions. But the opposite is not true.
+
+> Inner scope has the access to outer scope resources.
+
+> Lexical scope means that in a nested group of functions, the inner functions have access to the variables and other resources of their parent scope.
+
+```jsx
+function outer() {
+    let a = 10;
+
+    function inner() {
+        let b = a * 2;
+
+        function innermost() {
+            let c = b * 3;
+
+            // console.log("inner most function: d, ", d); /// error, since d is not yet declared in the lexial scope
+            console.log("inner most function: c, ", c);
+        }
+
+        innermost();
+        // console.log(c); /// error, since c is out of lexical scope
+    }
+
+    function inner2() {
+        console.log(a); /// a is accessible since it is available in the lexical scope
+        inner();
+    }
+
+    inner2();
+    let d = 100;
+}
+
+outer();
+```
+</details>
+
+## ```Q9: What is closure?```
+
+<details>
+<summary>Answer</summary>
+
+</details>
