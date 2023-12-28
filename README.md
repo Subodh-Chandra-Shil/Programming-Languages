@@ -1,11 +1,11 @@
-## ```Q1: What are the JavaScript Date Types?``` 
+## ```Q1: What are the JavaScript Data Types?``` 
 
 There are 8 data types in JS. These are:
 1. All 6 premitive types 
 2. Object: Complex data type that can store multiple premitive types. 
 
 
-## ```Q2: What are **primitive types** in JS?```
+## ```Q2: What are primitive types in JS?```
 > Primitive types are smallest and individual types those are unbreakable or can't be derived from any other data types. The 6 primitive types are:
 1. undefined 
 2. Boolean
