@@ -182,7 +182,7 @@ Avoid declaring global variables as much possible, since it can be shared within
 <details>
 <summary>Answer</summary>
 
-> A lexical or static scope in JavaScript means that a variable, function or any other resource defined inside a nested function can resources of outer functions. But the opposite is not true.
+> A lexical or static scope in JavaScript means that a variable, function or any other resource defined inside a nested function can access resources of outer functions. But the opposite is not true.
 
 > Inner scope has the access to outer scope resources.
 
@@ -219,9 +219,44 @@ outer();
 ```
 </details>
 
+&nbsp;
+
 ## ```Q9: What is closure?```
 
 <details>
 <summary>Answer</summary>
+
+> A closures is a special nested function can access and utilize the resources of all three scope chains from the inner function: 
+> 1. Access to its own scope: Variables defined within the function. 
+> 2. Access to the outer function’s variables.
+> 3. Access to the global variables.
+
+```jsx
+function newYearMessage() {
+  let year = '2024';
+
+  return function message() {   
+      let greeting = 'Hello'; 
+     return (`${greeting} ${year}`);
+  }
+}
+
+let happyNewYear = newYearMessage();
+console.log(happyNewYear);
+```
+
+With ES6 syntax closer looks like this: 
+```jsx
+const newYearMessage = (year) => message = (greeting) => (`${greeting} ${year}`);
+
+let happyNewYear = newYearMessage(2024);
+console.log(happyNewYear('Hello'));
+```
+
+Since, we've enclosed or combined a function within another function definition, we say this as closer. 
+
+Usecase of closure: 
+1. Data encapsulation.
+2. Lessen then declaration of global variables.
 
 </details>
