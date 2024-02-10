@@ -257,6 +257,6 @@ Since, we've enclosed or combined a function within another function definition,
 
 Usecase of closure: 
 1. Data encapsulation.
-2. Lessen then declaration of global variables.
+2. Lessen the declaration of global variables.
 
 </details>
