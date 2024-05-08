@@ -11,6 +11,7 @@ def multivariable_input():
 
 """ Multiline array input"""
 
+
 def array_input():
     # array size based input
     n = int(input())
@@ -30,6 +31,7 @@ def array_input():
 
 
 """ Single array input """
+
 
 def array_input2():
     arr = list(map(int, input().split()))
@@ -69,7 +71,7 @@ def matrix_input():
             element = int(input())
             row.append(element)
         matrix.append(row)
-    
+
     """ How to print the matrix """
     for i, row in enumerate(matrix):
         for _, ele in enumerate(row):
@@ -79,5 +81,6 @@ def matrix_input():
     # [print(row) for row in matrix]
 
     # [[print(ele, end=" ") for i, ele in enumerate(row)] and print() for row in matrix]
+
 
 matrix_input()
