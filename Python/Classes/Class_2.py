@@ -14,8 +14,6 @@ Escape sequences
 -----------------
 """
 
-
-
 # next line = '\n' (next line escape character or sequence)
 print("This is Subodh\nHe is studying in CSE")
 # tab space = '\t' (4 whitespace)
