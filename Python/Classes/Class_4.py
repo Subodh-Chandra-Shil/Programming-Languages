@@ -15,7 +15,6 @@ print(f"{a}, {b}, {c}")
 x = y = z = 20
 print(f"{x}, {y}, {z}")
 
-
 # Data types
 # Data => unorganized values
 
@@ -28,7 +27,6 @@ print(f"{x}, {y}, {z}")
     True, False= > boolean data type
     
     "Hello world!" = > string data type
-
 """
 
 float_type = 100.5
@@ -38,7 +36,7 @@ string_type = "Hello"
 
 # Given a variable find out which type it belongs?
 unknown_type = "Bangladesh"
-print(type(unknown_type))
+print(type(float_type))
 
 kichu_na_type = None
-print(type(kichu_na_type))
+# print(type(kichu_na_type))
