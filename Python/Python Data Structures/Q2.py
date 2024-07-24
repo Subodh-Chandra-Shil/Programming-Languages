@@ -12,8 +12,8 @@ dummy = macbook
 dummy.clear()
 print(dummy)
 
-# 3.  Method fromkeys() 👉 returns a dictionary with the specified keys and the specified value.
 
+# 3.  Method fromkeys() 👉 returns a dictionary with the specified keys and the specified value.
 keys = ('a', 'b', 'c', 'd')
 newDict = dict.fromkeys(keys, 0)
 print(newDict)
@@ -24,12 +24,10 @@ print(newDict.get('c'))
 
 
 # 5. Method items()
-
 allDictItems = newDict.items()
 print(allDictItems)
 
 # 6. Method keys()
-
 allDictKeys = newDict.keys()
 print(allDictKeys)
 
@@ -44,9 +42,11 @@ print(newDict2['name'])
 newDict2.update({"name": "Antu"})
 print(newDict2)
 
+
 # 9. Method values()
 allValues = newDict2.values()
 print(allValues)
+
 
 # 10. Method pop()
 newDict.pop('d')

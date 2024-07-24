@@ -5,5 +5,4 @@ print('hello world')
 print(150)
 print('I have 100')
 print(100 + 200)
-print('100' + '200') # exception, string concatenation 
-
+print('100' + '200')  # exception, string concatenation

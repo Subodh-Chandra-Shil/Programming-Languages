@@ -8,9 +8,3 @@ demoDict = {
 print(demoDict)
 print(demoDict['name'])
 print(len(demoDict))
-
-
-
-
-
-
